@@ -25,10 +25,12 @@ export const update = () => {
 
 
 export const draw = (gameCanvas) => {
-    const squaresElement = document.createElement('div');
+    const squaresElement = document.createElement('img');
+    squaresElement.src = 'assets/img/apple-fruit.png';
+    squaresElement.style.width = "4vmin";
     squaresElement.style.gridRowStart = squares.y;
     squaresElement.style.gridColumnStart = squares.x;
-    squaresElement.classList.add('squares');
+    // squaresElement.classList.add('squares');
     // squaresElement.style.backgroundColor = `rgb(${randomColor()},${randomColor()},${randomColor()})`;
     gameCanvas.appendChild(squaresElement);
 };
